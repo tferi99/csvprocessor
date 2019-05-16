@@ -1,7 +1,7 @@
 package org.ftoth.cvsproc.grp2;
 
 import org.apache.log4j.Logger;
-import org.ftoth.cvsproc.utils.CsvGroupProcessor;
+import org.ftoth.cvsproc.general.CsvGroupProcessor;
 
 import java.util.List;
 

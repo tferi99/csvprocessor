@@ -1,9 +1,9 @@
 package org.ftoth.cvsproc.grp2;
 
 import org.apache.log4j.Logger;
+import org.ftoth.cvsproc.general.CsvGroup;
 import org.ftoth.cvsproc.general.CsvGroupProcessor;
-
-import java.util.List;
+import org.ftoth.demo.CustomColumnPositionMappingStrategy;
 
 public class CsvGroupProcessorImpl extends CsvGroupProcessor<Model>
 {
@@ -11,18 +11,29 @@ public class CsvGroupProcessorImpl extends CsvGroupProcessor<Model>
 
     public CsvGroupProcessorImpl(String inputFile) throws Exception
     {
-        super(inputFile, new CustomMappingStrategyAll<Model>());
+        super(inputFile, new CustomColumnPositionMappingStrategy<Model>());
     }
 
     @Override
-    protected Object getGroupIdFromBean(Model bean)
+    protected Object getGroupIdFromItem(Model bean)
     {
         return bean.getOpenItemKey();
     }
 
     @Override
-    protected boolean processGroup(List<Model> beans)
+    protected boolean validateGroup(CsvGroup<Model> group)
     {
+        //
+        if (Math.random() > 0.5) {
+            logValidationError(this.getClass().getSimpleName(), "test issue");
+            return false;
+        }
         return true;
+    }
+
+    @Override
+    protected void processGroup(CsvGroup<Model> group)
+    {
+
     }
 }

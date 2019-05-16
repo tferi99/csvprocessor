@@ -4,12 +4,14 @@ import com.opencsv.bean.ColumnPositionMappingStrategy;
 import com.opencsv.bean.StatefulBeanToCsv;
 import com.opencsv.bean.StatefulBeanToCsvBuilder;
 
+import java.io.IOException;
 import java.io.Writer;
 import java.util.List;
 
 public class CsvWriter<T>
 {
-    StatefulBeanToCsv csvWriter;
+    Writer writer;
+    StatefulBeanToCsv csvWriter = null;
 
     public CsvWriter(Writer writer)
     {
@@ -18,6 +20,7 @@ public class CsvWriter<T>
 
     public CsvWriter(Writer writer, ColumnPositionMappingStrategy<T> columnWritePositionStrategy)
     {
+        this.writer = writer;
         csvWriter = new StatefulBeanToCsvBuilder(writer)
                 .withMappingStrategy(columnWritePositionStrategy)
                 .build();
@@ -31,5 +34,16 @@ public class CsvWriter<T>
     public void write(T bean) throws Exception
     {
         csvWriter.write(bean);
+    }
+
+    public void close()
+    {
+        if (writer  != null) {
+            try {
+                writer .close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
     }
 }

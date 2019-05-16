@@ -2,7 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="824ac2a6-2182-44bb-aff0-fe0ddc5db712" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/ftoth/cvsproc/general/CsvGroup.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/ftoth/demo/CustomColumnPositionMappingStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/ftoth/demo/CustomHeaderColumnNameMappingStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/ftoth/demo/Model.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/ftoth/demo/ModelNoAnnot.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/ftoth/demo/ModelNoNameAnnot.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/ftoth/demo/ModelNoPosAnnot.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/ftoth/cvsproc/general/CsvGroupProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/ftoth/cvsproc/general/CsvGroupProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/ftoth/cvsproc/general/CsvReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/ftoth/cvsproc/general/CsvReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/ftoth/cvsproc/general/CsvWriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/ftoth/cvsproc/general/CsvWriter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/ftoth/cvsproc/grp2/CsvGroupProcessorImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/ftoth/cvsproc/grp2/CsvGroupProcessorImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/ftoth/cvsproc/grp2/CustomMappingStrategyAll.java" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -14,134 +26,64 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/ftoth/cvsproc/grp2/Model.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/ftoth/demo/CustomColumnPositionMappingStrategy.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="256">
-              <caret line="78" selection-start-line="78" selection-end-line="78" />
+            <state relative-caret-position="612">
+              <caret line="36" column="1" lean-forward="true" selection-start-line="36" selection-start-column="1" selection-end-line="36" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#3078#3079#0" expanded="true" />
-                <element signature="e#3103#3104#0" expanded="true" />
-                <element signature="e#3154#3155#0" expanded="true" />
-                <element signature="e#3191#3192#0" expanded="true" />
-                <element signature="e#3225#3226#0" expanded="true" />
-                <element signature="e#3249#3250#0" expanded="true" />
-                <element signature="e#3298#3299#0" expanded="true" />
-                <element signature="e#3333#3334#0" expanded="true" />
-                <element signature="e#3364#3365#0" expanded="true" />
-                <element signature="e#3385#3386#0" expanded="true" />
-                <element signature="e#3428#3429#0" expanded="true" />
-                <element signature="e#3457#3458#0" expanded="true" />
-                <element signature="e#3499#3500#0" expanded="true" />
-                <element signature="e#3531#3532#0" expanded="true" />
-                <element signature="e#3596#3597#0" expanded="true" />
-                <element signature="e#3647#3648#0" expanded="true" />
-                <element signature="e#3684#3685#0" expanded="true" />
-                <element signature="e#3711#3712#0" expanded="true" />
-                <element signature="e#3766#3767#0" expanded="true" />
-                <element signature="e#3807#3808#0" expanded="true" />
-                <element signature="e#3840#3841#0" expanded="true" />
-                <element signature="e#3863#3864#0" expanded="true" />
-                <element signature="e#3910#3911#0" expanded="true" />
-                <element signature="e#3943#3944#0" expanded="true" />
-                <element signature="e#3978#3979#0" expanded="true" />
-                <element signature="e#4003#4004#0" expanded="true" />
-                <element signature="e#4054#4055#0" expanded="true" />
-                <element signature="e#4091#4092#0" expanded="true" />
-                <element signature="e#4123#4124#0" expanded="true" />
-                <element signature="e#4145#4146#0" expanded="true" />
-                <element signature="e#4190#4191#0" expanded="true" />
-                <element signature="e#4221#4222#0" expanded="true" />
-                <element signature="e#4258#4259#0" expanded="true" />
-                <element signature="e#4285#4286#0" expanded="true" />
-                <element signature="e#4340#4341#0" expanded="true" />
-                <element signature="e#4381#4382#0" expanded="true" />
-                <element signature="e#4413#4414#0" expanded="true" />
-                <element signature="e#4435#4436#0" expanded="true" />
-                <element signature="e#4480#4481#0" expanded="true" />
-                <element signature="e#4511#4512#0" expanded="true" />
-                <element signature="e#4551#4552#0" expanded="true" />
-                <element signature="e#4581#4582#0" expanded="true" />
-                <element signature="e#4642#4643#0" expanded="true" />
-                <element signature="e#4689#4690#0" expanded="true" />
-                <element signature="e#4722#4723#0" expanded="true" />
-                <element signature="e#4745#4746#0" expanded="true" />
-                <element signature="e#4792#4793#0" expanded="true" />
-                <element signature="e#4825#4826#0" expanded="true" />
-                <element signature="e#4866#4867#0" expanded="true" />
-                <element signature="e#4897#4898#0" expanded="true" />
-                <element signature="e#4960#4961#0" expanded="true" />
-                <element signature="e#5009#5010#0" expanded="true" />
-                <element signature="e#5042#5043#0" expanded="true" />
-                <element signature="e#5065#5066#0" expanded="true" />
-                <element signature="e#5112#5113#0" expanded="true" />
-                <element signature="e#5145#5146#0" expanded="true" />
-                <element signature="e#5184#5185#0" expanded="true" />
-                <element signature="e#5213#5214#0" expanded="true" />
-                <element signature="e#5272#5273#0" expanded="true" />
-                <element signature="e#5317#5318#0" expanded="true" />
-                <element signature="e#5354#5355#0" expanded="true" />
-                <element signature="e#5381#5382#0" expanded="true" />
-                <element signature="e#5436#5437#0" expanded="true" />
-                <element signature="e#5477#5478#0" expanded="true" />
-                <element signature="e#5511#5512#0" expanded="true" />
-                <element signature="e#5535#5536#0" expanded="true" />
-                <element signature="e#5584#5585#0" expanded="true" />
-                <element signature="e#5619#5620#0" expanded="true" />
-                <element signature="e#5654#5655#0" expanded="true" />
-                <element signature="e#5679#5680#0" expanded="true" />
-                <element signature="e#5730#5731#0" expanded="true" />
-                <element signature="e#5767#5768#0" expanded="true" />
-                <element signature="e#5801#5802#0" expanded="true" />
-                <element signature="e#5825#5826#0" expanded="true" />
-                <element signature="e#5874#5875#0" expanded="true" />
-                <element signature="e#5909#5910#0" expanded="true" />
-                <element signature="e#5944#5945#0" expanded="true" />
-                <element signature="e#5969#5970#0" expanded="true" />
-                <element signature="e#6020#6021#0" expanded="true" />
-                <element signature="e#6057#6058#0" expanded="true" />
-                <element signature="e#6087#6088#0" expanded="true" />
-                <element signature="e#6107#6108#0" expanded="true" />
-                <element signature="e#6148#6149#0" expanded="true" />
-                <element signature="e#6175#6176#0" expanded="true" />
-                <element signature="e#6209#6210#0" expanded="true" />
-                <element signature="e#6233#6234#0" expanded="true" />
-                <element signature="e#6282#6283#0" expanded="true" />
-                <element signature="e#6317#6318#0" expanded="true" />
-                <element signature="e#6347#6348#0" expanded="true" />
-                <element signature="e#6367#6368#0" expanded="true" />
-                <element signature="e#6408#6409#0" expanded="true" />
-                <element signature="e#6435#6436#0" expanded="true" />
-                <element signature="e#6467#6468#0" expanded="true" />
-                <element signature="e#6489#6490#0" expanded="true" />
-                <element signature="e#6534#6535#0" expanded="true" />
-                <element signature="e#6565#6566#0" expanded="true" />
-                <element signature="e#6601#6602#0" expanded="true" />
-                <element signature="e#6627#6628#0" expanded="true" />
-                <element signature="e#6680#6681#0" expanded="true" />
-                <element signature="e#6719#6720#0" expanded="true" />
-                <element signature="e#6749#6750#0" expanded="true" />
-                <element signature="e#6769#6770#0" expanded="true" />
-                <element signature="e#6810#6811#0" expanded="true" />
-                <element signature="e#6837#6838#0" expanded="true" />
-                <element signature="e#6866#6867#0" expanded="true" />
-                <element signature="e#6885#6886#0" expanded="true" />
-                <element signature="e#6924#6925#0" expanded="true" />
-                <element signature="e#6949#6950#0" expanded="true" />
-                <element signature="e#6977#6978#0" expanded="true" />
-                <element signature="e#6995#6996#0" expanded="true" />
-                <element signature="e#7032#7033#0" expanded="true" />
-                <element signature="e#7055#7056#0" expanded="true" />
+                <element signature="e#403#410#0" expanded="true" />
+                <element signature="e#569#577#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/ftoth/cvsproc/grp2/CustomMappingStrategyAll.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/ftoth/demo/CustomHeaderColumnNameMappingStrategy.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
+            <state relative-caret-position="425">
+              <caret line="25" selection-start-line="25" selection-end-line="25" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#493#500#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/ftoth/demo/ModelNoNameAnnot.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/ftoth/demo/Model.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/ftoth/demo/ModelNoPosAnnot.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="13" column="30" lean-forward="true" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/ftoth/demo/ModelNoAnnot.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret lean-forward="true" />
             </state>
           </provider>
         </entry>
@@ -149,14 +91,12 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/ftoth/cvsproc/grp2/CsvGroupProcessorImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="13" column="8" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
+            <state relative-caret-position="214">
+              <caret line="13" column="36" lean-forward="true" selection-start-line="13" selection-start-column="36" selection-end-line="13" selection-end-column="36" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#506#507#0" expanded="true" />
                 <element signature="e#550#551#0" expanded="true" />
-                <element signature="e#625#626#0" expanded="true" />
-                <element signature="e#652#653#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -165,26 +105,30 @@
       <file pinned="false" current-in-tab="false">
         <entry file="jar://$MAVEN_REPOSITORY$/com/opencsv/opencsv/4.6/opencsv-4.6.jar!/com/opencsv/bean/ColumnPositionMappingStrategy.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+            <state relative-caret-position="269">
+              <caret line="76" column="68" lean-forward="true" selection-start-line="76" selection-start-column="68" selection-end-line="76" selection-end-column="68" />
+              <folding>
+                <element signature="e#3403#3404#0" expanded="true" />
+                <element signature="e#3459#3460#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/com/opencsv/opencsv/4.6/opencsv-4.6.jar!/com/opencsv/bean/CsvToBeanBuilder.class">
+        <entry file="jar://$MAVEN_REPOSITORY$/com/opencsv/opencsv/4.6/opencsv-4.6.jar!/com/opencsv/bean/AbstractMappingStrategy.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="22" column="28" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
+            <state relative-caret-position="147">
+              <caret line="104" column="20" selection-start-line="104" selection-start-column="20" selection-end-line="104" selection-end-column="20" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/com/opencsv/opencsv/4.6/opencsv-4.6.jar!/com/opencsv/bean/CsvToBean.class">
+        <entry file="jar://$MAVEN_REPOSITORY$/com/opencsv/opencsv/4.6/opencsv-4.6.jar!/com/opencsv/bean/HeaderIndex.class">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="102">
-              <caret line="36" column="22" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="22" />
+              <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -205,7 +149,16 @@
       <find>CsvToBean</find>
       <find>new gr</find>
       <find>buil</find>
+      <find>processGroup</find>
+      <find>validateGroup</find>
+      <find>currentGroupId</find>
+      <find>@CsvBindByPosition</find>
+      <find>@CsvBindByName</find>
     </findStrings>
+    <replaceStrings>
+      <replace>//@CsvBindByPosition</replace>
+      <replace>//@CsvBindByName</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -222,14 +175,27 @@
         <option value="$PROJECT_DIR$/src/main/java/org/ftoth/cvsproc/grp2/GroupProcessorImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/ftoth/cvsproc/GroupProcessor.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/ftoth/cvsproc/Processor.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/ftoth/cvsproc/CsvProcessor.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/org/ftoth/cvsproc/grp2/Model.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/ftoth/cvsproc/utils/CsvProcessor.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/ftoth/cvsproc/grp2/CsvGroupProcessorImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/ftoth/cvsproc/grp2/CustomMappingStrategyAll.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/ftoth/cvsproc/utils/CsvWriter.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/ftoth/cvsproc/utils/CsvGroupProcessor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/ftoth/cvsproc/general/CsvGroup.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/ftoth/cvsproc/grp2/CsvGroupProcessorImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/ftoth/cvsproc/CsvProcessor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/ftoth/cvsproc/general/CsvWriter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/ftoth/cvsproc/general/CsvReader.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/ftoth/cvsproc/general/CsvGroupProcessor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/ftoth/cvsproc/grp2/CustomMappingStrategyAll.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/ftoth/demo/CustomMappingStrategyAll.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/ftoth/demo/CustomHeaderColumnNameMappingStrategy.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/ftoth/demo/ColumnPositionMappingStrategy.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/ftoth/cvsproc/grp2/Model2.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/ftoth/demo/Model.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/ftoth/demo/Model3.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/ftoth/demo/ModelNoPosAnnot.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/ftoth/demo/ModelNoAnnot.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/ftoth/demo/CustomColumnPositionMappingStrategy.java" />
       </list>
     </option>
   </component>
@@ -241,10 +207,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
+    <option name="x" value="2036" />
+    <option name="y" value="61" />
     <option name="width" value="1936" />
-    <option name="height" value="1216" />
+    <option name="height" value="1212" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -294,6 +260,25 @@
               <item name="ftoth" type="462c0819:PsiDirectoryNode" />
               <item name="cvsproc" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="csvprocessor" type="b2602c69:ProjectViewProjectNode" />
+              <item name="csvprocessor" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="ftoth" type="462c0819:PsiDirectoryNode" />
+              <item name="cvsproc" type="462c0819:PsiDirectoryNode" />
+              <item name="grp2" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="csvprocessor" type="b2602c69:ProjectViewProjectNode" />
+              <item name="csvprocessor" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="ftoth" type="462c0819:PsiDirectoryNode" />
+              <item name="demo" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -304,7 +289,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557931599501" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558016654244" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -312,6 +297,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.ftoth.demo" />
+      <recent name="org.ftoth.cvsproc.grp2" />
       <recent name="org.ftoth.cvsproc.general" />
     </key>
   </component>
@@ -327,7 +314,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.CustomHeaderColumnNameMappingStrategy">
     <configuration name="CsvProcessor" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="org.ftoth.cvsproc.CsvProcessor" />
       <module name="csvprocessor" />
@@ -336,6 +323,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="CustomColumnPositionMappingStrategy" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="org.ftoth.demo.CustomColumnPositionMappingStrategy" />
+      <module name="csvprocessor" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CustomHeaderColumnNameMappingStrategy" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="org.ftoth.demo.CustomHeaderColumnNameMappingStrategy" />
+      <module name="csvprocessor" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.CsvProcessor" />
+      <item itemvalue="Application.CustomColumnPositionMappingStrategy" />
+      <item itemvalue="Application.CustomHeaderColumnNameMappingStrategy" />
+    </list>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -354,22 +360,23 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21598000" />
+    <option name="totallyTimeSpent" value="34108000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1186" extended-state="6" />
+    <frame x="1912" y="-8" width="1936" height="1188" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Designer" order="0" />
       <window_info id="Image Layers" order="1" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="UI Designer" order="3" />
       <window_info id="Favorites" order="4" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.18603411" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.22441365" />
       <window_info id="JRebel" order="6" side_tool="true" />
       <window_info id="Structure" order="7" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="0" />
       <window_info anchor="bottom" id="Docker" order="1" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Messages" order="2" weight="0.32913843" />
+      <window_info anchor="bottom" id="Messages" order="2" weight="0.3281704" />
       <window_info anchor="bottom" id="Database Changes" order="3" />
       <window_info anchor="bottom" id="Version Control" order="4" />
       <window_info anchor="bottom" id="JRebel Executor" order="5" />
@@ -377,8 +384,8 @@
       <window_info anchor="bottom" id="Message" order="7" />
       <window_info anchor="bottom" id="Find" order="8" weight="0.32913843" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Run" order="10" weight="0.32783705" />
-      <window_info anchor="bottom" id="Debug" order="11" weight="0.48789933" />
+      <window_info anchor="bottom" id="Run" order="10" weight="0.32720232" />
+      <window_info anchor="bottom" id="Debug" order="11" weight="0.49757987" />
       <window_info anchor="bottom" id="Cvs" order="12" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="13" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="14" />
@@ -398,21 +405,21 @@
       <window_info id="Capture Tool" order="2" />
       <window_info id="UI Designer" order="3" />
       <window_info id="Favorites" order="4" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="5" weight="0.18603411" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.18603411" />
       <window_info id="JRebel" order="6" side_tool="true" />
       <window_info id="Structure" order="7" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="0" />
       <window_info anchor="bottom" id="Docker" order="1" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Messages" order="2" weight="0.32913843" />
+      <window_info anchor="bottom" id="Messages" order="2" weight="0.3281704" />
       <window_info anchor="bottom" id="Database Changes" order="3" />
       <window_info anchor="bottom" id="Version Control" order="4" />
       <window_info anchor="bottom" id="JRebel Executor" order="5" />
       <window_info anchor="bottom" id="JRebel Console" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="7" />
-      <window_info active="true" anchor="bottom" id="Find" order="8" visible="true" weight="0.32913843" />
+      <window_info anchor="bottom" id="Find" order="8" weight="0.32913843" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Run" order="10" weight="0.3281704" />
-      <window_info anchor="bottom" id="Debug" order="11" weight="0.48789933" />
+      <window_info anchor="bottom" id="Run" order="10" weight="0.32720232" />
+      <window_info anchor="bottom" id="Debug" order="11" visible="true" weight="0.49757987" />
       <window_info anchor="bottom" id="Cvs" order="12" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="13" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="14" />
@@ -429,6 +436,44 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/ftoth/demo/CustomColumnPositionMappingStrategy.java</url>
+          <line>33</line>
+          <properties />
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/ftoth/demo/CustomHeaderColumnNameMappingStrategy.java</url>
+          <line>25</line>
+          <properties />
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/ftoth/demo/CustomColumnPositionMappingStrategy.java</url>
+          <line>33</line>
+          <properties />
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="this.writeOrder" language="JAVA" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="watch">
+      <expression>
+        <expression-string>this.writeOrder</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
   </component>
   <component name="editorHistoryManager">
     <entry file="jar://D:/opt/java/jdk1.8/src.zip!/java/io/FileReader.java">
@@ -479,41 +524,6 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/org/ftoth/cvsproc/utils/CsvProcessor.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/org/ftoth/cvsproc/utils/CsvWriter.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/org/ftoth/cvsproc/utils/CsvGroupProcessor.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/ftoth/cvsproc/grp2/CustomMappingStrategyAll.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/ftoth/cvsproc/grp2/CsvGroupProcessorImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="13" column="8" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#506#507#0" expanded="true" />
-            <element signature="e#550#551#0" expanded="true" />
-            <element signature="e#625#626#0" expanded="true" />
-            <element signature="e#652#653#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/opencsv/opencsv/4.6/opencsv-4.6.jar!/com/opencsv/bean/ColumnPositionMappingStrategy.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/opencsv/opencsv/4.6/opencsv-4.6.jar!/com/opencsv/bean/CsvToBeanBuilder.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="22" column="28" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/com/opencsv/opencsv/4.6/opencsv-4.6.jar!/com/opencsv/bean/CsvToBean.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -521,10 +531,49 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/opencsv/opencsv/4.6/opencsv-4.6.jar!/com/opencsv/bean/CsvToBeanBuilder.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-544">
+          <caret line="22" column="28" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/ftoth/cvsproc/general/CsvGroup.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#164#165#0" expanded="true" />
+            <element signature="e#189#190#0" expanded="true" />
+            <element signature="e#225#226#0" expanded="true" />
+            <element signature="e#253#254#0" expanded="true" />
+            <element signature="e#286#287#0" expanded="true" />
+            <element signature="e#314#315#0" expanded="true" />
+            <element signature="e#402#403#0" expanded="true" />
+            <element signature="e#421#422#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/ftoth/cvsproc/CsvProcessor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="404">
+          <caret line="53" column="17" selection-start-line="53" selection-start-column="17" selection-end-line="53" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/ftoth/cvsproc/general/CsvReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/ftoth/cvsproc/grp2/Model.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="78" selection-start-line="78" selection-end-line="78" />
+        <state relative-caret-position="204">
+          <caret line="12" column="22" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#3078#3079#0" expanded="true" />
@@ -639,6 +688,116 @@
             <element signature="e#6995#6996#0" expanded="true" />
             <element signature="e#7032#7033#0" expanded="true" />
             <element signature="e#7055#7056#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/ftoth/cvsproc/general/CsvWriter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="15" column="15" selection-start-line="15" selection-start-column="15" selection-end-line="15" selection-end-column="15" />
+          <folding>
+            <element signature="e#334#335#0" expanded="true" />
+            <element signature="e#368#369#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/ftoth/cvsproc/general/CsvGroupProcessor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="26" column="21" lean-forward="true" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
+          <folding>
+            <element signature="e#1035#1036#0" expanded="true" />
+            <element signature="e#1089#1090#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/ftoth/cvsproc/grp2/CsvGroupProcessorImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="13" column="36" lean-forward="true" selection-start-line="13" selection-start-column="36" selection-end-line="13" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#506#507#0" expanded="true" />
+            <element signature="e#550#551#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/opencsv/opencsv/4.6/opencsv-4.6.jar!/com/opencsv/bean/HeaderIndex.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/opencsv/opencsv/4.6/opencsv-4.6.jar!/com/opencsv/bean/AbstractMappingStrategy.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="104" column="20" selection-start-line="104" selection-start-column="20" selection-end-line="104" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/opencsv/opencsv/4.6/opencsv-4.6.jar!/com/opencsv/bean/ColumnPositionMappingStrategy.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="76" column="68" lean-forward="true" selection-start-line="76" selection-start-column="68" selection-end-line="76" selection-end-column="68" />
+          <folding>
+            <element signature="e#3403#3404#0" expanded="true" />
+            <element signature="e#3459#3460#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/ftoth/demo/Model.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/ftoth/demo/ModelNoNameAnnot.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/ftoth/demo/ModelNoPosAnnot.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="13" column="30" lean-forward="true" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/ftoth/demo/ModelNoAnnot.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/ftoth/demo/CustomHeaderColumnNameMappingStrategy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#493#500#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/ftoth/demo/CustomColumnPositionMappingStrategy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="36" column="1" lean-forward="true" selection-start-line="36" selection-start-column="1" selection-end-line="36" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#403#410#0" expanded="true" />
+            <element signature="e#569#577#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -11,9 +11,11 @@ Usage:
 1. create: CSV loaded into processor
 2. get list of beans
 
-> CsvProcessor<Model> processor = new CsvProcessor<Model>(inputFile);
->  List<Model> beans = processor.getBeans()
 
+    CsvProcessor<Model> processor = new CsvProcessor<Model>(inputFile);
+    List<Model> beans = processor.getBeans()
+
+  
 #### CsvGroupProcessor
 
 # Processors

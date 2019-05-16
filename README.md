@@ -47,7 +47,7 @@ Reading and writing based on independent strategies.
 ## Adding new custom processors
 You can generate some metadata classes with a shellscript which generates Java classes from CSV column headers.
 1. Generate model and mapping startegy JAVA by input CSV.
-2. Move Java classes into custom processor package (org.ftoth.cvsproc.<CustProc>)
+2. Move Java classes into custom processor package (org.ftoth.cvsproc.&lt;CustProc&gt;)
 3. 
     
 

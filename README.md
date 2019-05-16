@@ -20,6 +20,14 @@ Usage:
 ```
   
 #### CsvGroupProcessor
+Generally groups of records are processed. A group is built from records which have the same ID (Object.equals()). ID of a record is created/retrieved by implementation of CsvGroupProcessor.getGroupIdFromBean().
+
+A group is processed if validation criterias are passed. Otherwise items of group will be redirected into REST file.
+To add processing create a new class inherinting CsvGroupProcessor and implement validateGroup(...) and processGroup(...).
+Base implementation povides you 2 writers:
+- 
+
+
 It identifies object groups from CSV records by record ID. That means it collects CSV records into groups by the same record ID.
 Current version supports only files ordered by ID. First it reads CSV into an object list with a CsvProcessor. Then it identifies groups by ID and calls processGroup(...) abstract method. ID is specified by getGroupIdFromBean(...) which returns an object. Object can contain composite ID (values from multiple fields). In this case create an ID class and implement hashCode() and equals() for this class.
 
@@ -36,6 +44,9 @@ Usage:
     gp.process();
 ```
 
+
+
+
 ## Processors
 CSV field mapping during processing based on annotated model objects. CSV fields mapped into object properties.
 A processor can read one CSV (one class) but OpenCVS supports reading associated object from multiple CSV file (theoratically).
@@ -51,11 +62,6 @@ You can generate some metadata classes with a shellscript which generates Java c
 1. Generate model and mapping startegy JAVA by input CSV.
 2. Move Java classes into custom processor package (org.ftoth.cvsproc.&lt;CustProc&gt;)
 3. 
-
-## General behavior
-Generally groups of records are processed. A group is built from records which have the same ID (Object.equals()). ID of a record is created/retrieved by implementation of CsvGroupProcessor.getGroupIdFromBean().
-
-A group is processed if validation criterias are passed ()
 
 ## grp2
 Requirement:

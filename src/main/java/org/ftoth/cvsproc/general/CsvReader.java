@@ -28,11 +28,17 @@ public class CsvReader<T>
     public CsvReader(String inputFile, char separator) throws Exception
     {
         this.inputFile = inputFile;
-        beans = new CsvToBeanBuilder(new FileReader(inputFile)).
-                withSeparator(separator).
-                withType(Model.class).
-                withSkipLines(1).                       // skip header
-                build().parse();
+        FileReader rd = new FileReader(inputFile);
+        try {
+            beans = new CsvToBeanBuilder(rd).
+                    withSeparator(separator).
+                    withType(Model.class).
+                    withSkipLines(1).                       // skip header
+                    build().parse();
+        }
+        finally {
+            rd.close();
+        }
     }
 
     public String dump()

@@ -1,33 +1,31 @@
 package org.ftoth.cvsproc.general;
 
-import com.opencsv.bean.ColumnPositionMappingStrategy;
+import org.apache.commons.io.FilenameUtils;
 import org.apache.log4j.Logger;
 
 import java.io.StringWriter;
+import java.util.ArrayList;
 import java.util.List;
 
 public abstract class CsvGroupProcessor<T>
 {
     private static Logger log = Logger.getLogger(CsvGroupProcessor.class);
 
+    protected Class<T> inputModelClass;
     protected CsvReader<T> reader;
     protected CsvWriter<T> processingResultWriter;
     protected CsvWriter<T> restWriter = null;
     protected List<List<T>> groups = null;
     protected CsvGroup<T> currentGroup = null;
     protected boolean writeNonValidGroupsIntoRestFile = true;
+    protected String inputFile;
+    protected List<T> rest = new ArrayList<T>();
 
-    /**
-     * This strategy contains description of columns of the (main) input CSV.
-     * It will be used for tracing incoming records or if processing output has the
-     * same field structure.
-     */
-    protected ColumnPositionMappingStrategy<T> columnWritePositionStrategy = null;
-
-    public CsvGroupProcessor(String inputFile, ColumnPositionMappingStrategy<T> columnWritePositionStrategy) throws Exception
+    public CsvGroupProcessor(String inputFile, Class<T> inputModelClass) throws Exception
     {
-        this.columnWritePositionStrategy = columnWritePositionStrategy;
-        reader = new CsvReader<T>(inputFile);
+        this.inputFile = inputFile;
+        this.inputModelClass = inputModelClass;
+        reader = new CsvReader<T>(inputFile, inputModelClass);
     }
 
     public boolean isWriteNonValidGroupsIntoRestFile() {
@@ -66,6 +64,9 @@ public abstract class CsvGroupProcessor<T>
             if (beans.size() > 0) {
                 onGroupLoaded();
             }
+
+            // write rest
+            writeRestToRestFile();
         }
         catch (Exception e) {
             log.error("Error occured during processing.", e);
@@ -73,6 +74,23 @@ public abstract class CsvGroupProcessor<T>
         }
         finally {
             cleanup();
+        }
+    }
+
+    private void writeRestToRestFile()
+    {
+        String ext = FilenameUtils.getExtension(inputFile);
+        String restFile = FilenameUtils.removeExtension(inputFile) + "-rest." + ext;
+
+        CsvWriter<T> restWriter = new CsvWriter<T>(restFile, inputFile, inputModelClass);
+        try {
+            restWriter.write(rest);
+        } catch (Exception e) {
+            log.error("Error during writing rest file: " + restFile, e);
+            e.printStackTrace();
+        }
+        finally {
+            restWriter.close();
         }
     }
 
@@ -105,11 +123,13 @@ public abstract class CsvGroupProcessor<T>
             processGroup(currentGroup);
         }
         else if (writeNonValidGroupsIntoRestFile) {
-            writeGroupIntoRestFile(currentGroup);
+            addGroupToRest(currentGroup);
         }
     }
 
-    private void writeGroupIntoRestFile(CsvGroup<T> group) {
+    private void addGroupToRest(CsvGroup<T> group)
+    {
+        rest.addAll(group.getItems());
     }
 
     /**
@@ -122,7 +142,7 @@ public abstract class CsvGroupProcessor<T>
     {
         if (log.isDebugEnabled()) {
             StringWriter w = new StringWriter();
-            CsvWriter<T> cw = new CsvWriter<T>(w);
+            CsvWriter<T> cw = new CsvWriter<T>(w, this.inputModelClass);
             try {
                 cw.write(bean);
             } catch (Exception e) {

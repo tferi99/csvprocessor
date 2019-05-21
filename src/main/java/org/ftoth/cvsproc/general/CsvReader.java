@@ -1,21 +1,25 @@
 package org.ftoth.cvsproc.general;
 
 import com.opencsv.bean.CsvToBeanBuilder;
-import org.ftoth.cvsproc.grp2.Model;
+import org.apache.log4j.Logger;
 import org.ftoth.general.util.BeanDump;
 
 import java.io.FileReader;
+import java.io.IOException;
 import java.util.List;
 
 public class CsvReader<T>
 {
+    private static Logger log = Logger.getLogger(CsvReader.class);
+
     public static final char DEFAULT_SEPARATOR = ',';
     protected String inputFile;
     protected List<T> beans;
+    protected Class<T> inputModelClass;
 
-    public CsvReader(String inputFile) throws Exception
+    public CsvReader(String inputFile, Class<T> sourceModelClass) throws Exception
     {
-        this(inputFile, DEFAULT_SEPARATOR);
+        this(inputFile, sourceModelClass, DEFAULT_SEPARATOR);
     }
 
     /**
@@ -25,19 +29,31 @@ public class CsvReader<T>
      * @param separator
      * @throws Exception
      */
-    public CsvReader(String inputFile, char separator) throws Exception
+    public CsvReader(String inputFile, Class<T> inputModelClass, char separator)
     {
         this.inputFile = inputFile;
-        FileReader rd = new FileReader(inputFile);
+        this.inputModelClass = inputModelClass;
+        FileReader rd = null;
         try {
+            rd = new FileReader(inputFile);
             beans = new CsvToBeanBuilder(rd).
+                    withType(inputModelClass).                  // it should be named and positioned
                     withSeparator(separator).
-                    withType(Model.class).
                     withSkipLines(1).                       // skip header
                     build().parse();
         }
+        catch (Exception e) {
+            log.error("Error during reading CVS: " + inputFile, e);
+            e.printStackTrace();
+        }
         finally {
-            rd.close();
+            if (rd != null) {
+                try {
+                    rd.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
         }
     }
 

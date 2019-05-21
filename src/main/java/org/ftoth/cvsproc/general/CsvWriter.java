@@ -34,18 +34,29 @@ public class CsvWriter<T>
 
     public CsvWriter(String outputFile, String outputFileTemplate, Class<T> outputModelClass)
     {
-        Reader headerRd = null;
-        CSVReader headerCsvRd = null;
+        init(outputFile, outputFileTemplate, outputModelClass);
+    }
+
+    public CsvWriter(String outputFile, Reader headerRd, Class<T> outputModelClass)
+    {
+        init(outputFile, headerRd, outputModelClass);
+    }
+
+    private void init(String outputFile, String outputFileTemplate, Class<T> outputModelClass)
+    {
         try {
-            headerRd = new FileReader(outputFileTemplate);
-            headerCsvRd = new CSVReader(headerRd);
+            init(outputFile, new FileReader(outputFileTemplate), outputModelClass);
         }
         catch (Exception e) {
-            log.error("Error during reading CVS output template: " + outputFileTemplate, e);
+            log.error("Error during reading CVS output template" + outputFileTemplate, e);
             e.printStackTrace();
         }
+    }
 
-
+    private void init(String outputFile, Reader headerRd, Class<T> outputModelClass)
+    {
+        CSVReader headerCsvRd = null;
+        headerCsvRd = new CSVReader(headerRd);
         try {
             HeaderColumnNameMappingStrategy<T> strategy = new HeaderColumnNameMappingStrategy<T>();
             strategy.setType(outputModelClass);

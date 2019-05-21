@@ -2,6 +2,9 @@ package org.ftoth.cvsproc.grp2;
 
 import com.opencsv.bean.CsvBindByName;
 import com.opencsv.bean.CsvBindByPosition;
+import com.opencsv.bean.CsvDate;
+
+import java.util.Date;
 
 public class InputModel
 {
@@ -51,7 +54,7 @@ public class InputModel
 
 	@CsvBindByName(column = "USD Amount")
 	@CsvBindByPosition(position = 11)
-	private String usdAmount;
+	private double usdAmount;
 
 	@CsvBindByName(column = "Reversal USD Amount")
 	@CsvBindByPosition(position = 12)
@@ -75,7 +78,8 @@ public class InputModel
 
 	@CsvBindByName(column = "Journal Date")
 	@CsvBindByPosition(position = 17)
-	private String journalDate;
+	@CsvDate("dd/MM/yyyy")
+	private Date journalDate;
 
 	@CsvBindByName(column = "Fiscal Year")
 	@CsvBindByPosition(position = 18)
@@ -121,293 +125,235 @@ public class InputModel
 	@CsvBindByPosition(position = 28)
 	private String lastname;
 
-	public String getOpenItemKey()
-	{
+	public String getOpenItemKey() {
 		return openItemKey;
 	}
 
-	public void setOpenItemKey(String openItemKey)
-	{
+	public void setOpenItemKey(String openItemKey) {
 		this.openItemKey = openItemKey;
 	}
 
-	public String getCostCentre()
-	{
+	public String getCostCentre() {
 		return costCentre;
 	}
 
-	public void setCostCentre(String costCentre)
-	{
+	public void setCostCentre(String costCentre) {
 		this.costCentre = costCentre;
 	}
 
-	public String getAccount()
-	{
+	public String getAccount() {
 		return account;
 	}
 
-	public void setAccount(String account)
-	{
+	public void setAccount(String account) {
 		this.account = account;
 	}
 
-	public String getAccountDescription()
-	{
+	public String getAccountDescription() {
 		return accountDescription;
 	}
 
-	public void setAccountDescription(String accountDescription)
-	{
+	public void setAccountDescription(String accountDescription) {
 		this.accountDescription = accountDescription;
 	}
 
-	public String getProgrammeGoal()
-	{
+	public String getProgrammeGoal() {
 		return programmeGoal;
 	}
 
-	public void setProgrammeGoal(String programmeGoal)
-	{
+	public void setProgrammeGoal(String programmeGoal) {
 		this.programmeGoal = programmeGoal;
 	}
 
-	public String getSituation()
-	{
+	public String getSituation() {
 		return situation;
 	}
 
-	public void setSituation(String situation)
-	{
+	public void setSituation(String situation) {
 		this.situation = situation;
 	}
 
-	public String getImplementer()
-	{
+	public String getImplementer() {
 		return implementer;
 	}
 
-	public void setImplementer(String implementer)
-	{
+	public void setImplementer(String implementer) {
 		this.implementer = implementer;
 	}
 
-	public String getBookCode()
-	{
+	public String getBookCode() {
 		return bookCode;
 	}
 
-	public void setBookCode(String bookCode)
-	{
+	public void setBookCode(String bookCode) {
 		this.bookCode = bookCode;
 	}
 
-	public String getLocalCurrency()
-	{
+	public String getLocalCurrency() {
 		return localCurrency;
 	}
 
-	public void setLocalCurrency(String localCurrency)
-	{
+	public void setLocalCurrency(String localCurrency) {
 		this.localCurrency = localCurrency;
 	}
 
-	public String getLcAmount()
-	{
+	public String getLcAmount() {
 		return lcAmount;
 	}
 
-	public void setLcAmount(String lcAmount)
-	{
+	public void setLcAmount(String lcAmount) {
 		this.lcAmount = lcAmount;
 	}
 
-	public String getReversalLcAmount()
-	{
+	public String getReversalLcAmount() {
 		return reversalLcAmount;
 	}
 
-	public void setReversalLcAmount(String reversalLcAmount)
-	{
+	public void setReversalLcAmount(String reversalLcAmount) {
 		this.reversalLcAmount = reversalLcAmount;
 	}
 
-	public String getUsdAmount()
-	{
+	public double getUsdAmount() {
 		return usdAmount;
 	}
 
-	public void setUsdAmount(String usdAmount)
-	{
+	public void setUsdAmount(double usdAmount) {
 		this.usdAmount = usdAmount;
 	}
 
-	public String getReversalUsdAmount()
-	{
+	public String getReversalUsdAmount() {
 		return reversalUsdAmount;
 	}
 
-	public void setReversalUsdAmount(String reversalUsdAmount)
-	{
+	public void setReversalUsdAmount(String reversalUsdAmount) {
 		this.reversalUsdAmount = reversalUsdAmount;
 	}
 
-	public String getJournalId()
-	{
+	public String getJournalId() {
 		return journalId;
 	}
 
-	public void setJournalId(String journalId)
-	{
+	public void setJournalId(String journalId) {
 		this.journalId = journalId;
 	}
 
-	public String getLineDescription()
-	{
+	public String getLineDescription() {
 		return lineDescription;
 	}
 
-	public void setLineDescription(String lineDescription)
-	{
+	public void setLineDescription(String lineDescription) {
 		this.lineDescription = lineDescription;
 	}
 
-	public String getLineReference()
-	{
+	public String getLineReference() {
 		return lineReference;
 	}
 
-	public void setLineReference(String lineReference)
-	{
+	public void setLineReference(String lineReference) {
 		this.lineReference = lineReference;
 	}
 
-	public String getBudgetYear()
-	{
+	public String getBudgetYear() {
 		return budgetYear;
 	}
 
-	public void setBudgetYear(String budgetYear)
-	{
+	public void setBudgetYear(String budgetYear) {
 		this.budgetYear = budgetYear;
 	}
 
-	public String getJournalDate()
-	{
+	public Date getJournalDate() {
 		return journalDate;
 	}
 
-	public void setJournalDate(String journalDate)
-	{
+	public void setJournalDate(Date journalDate) {
 		this.journalDate = journalDate;
 	}
 
-	public String getFiscalYear()
-	{
+	public String getFiscalYear() {
 		return fiscalYear;
 	}
 
-	public void setFiscalYear(String fiscalYear)
-	{
+	public void setFiscalYear(String fiscalYear) {
 		this.fiscalYear = fiscalYear;
 	}
 
-	public String getPeriodMonth()
-	{
+	public String getPeriodMonth() {
 		return periodMonth;
 	}
 
-	public void setPeriodMonth(String periodMonth)
-	{
+	public void setPeriodMonth(String periodMonth) {
 		this.periodMonth = periodMonth;
 	}
 
-	public String getStatus()
-	{
+	public String getStatus() {
 		return status;
 	}
 
-	public void setStatus(String status)
-	{
+	public void setStatus(String status) {
 		this.status = status;
 	}
 
-	public String getClosedDate()
-	{
+	public String getClosedDate() {
 		return closedDate;
 	}
 
-	public void setClosedDate(String closedDate)
-	{
+	public void setClosedDate(String closedDate) {
 		this.closedDate = closedDate;
 	}
 
-	public String getSource()
-	{
+	public String getSource() {
 		return source;
 	}
 
-	public void setSource(String source)
-	{
+	public void setSource(String source) {
 		this.source = source;
 	}
 
-	public String getOpenDate()
-	{
+	public String getOpenDate() {
 		return openDate;
 	}
 
-	public void setOpenDate(String openDate)
-	{
+	public void setOpenDate(String openDate) {
 		this.openDate = openDate;
 	}
 
-	public String getReconcileNbr()
-	{
+	public String getReconcileNbr() {
 		return reconcileNbr;
 	}
 
-	public void setReconcileNbr(String reconcileNbr)
-	{
+	public void setReconcileNbr(String reconcileNbr) {
 		this.reconcileNbr = reconcileNbr;
 	}
 
-	public String getLedger()
-	{
+	public String getLedger() {
 		return ledger;
 	}
 
-	public void setLedger(String ledger)
-	{
+	public void setLedger(String ledger) {
 		this.ledger = ledger;
 	}
 
-	public String getDescr()
-	{
+	public String getDescr() {
 		return descr;
 	}
 
-	public void setDescr(String descr)
-	{
+	public void setDescr(String descr) {
 		this.descr = descr;
 	}
 
-	public String getName()
-	{
+	public String getName() {
 		return name;
 	}
 
-	public void setName(String name)
-	{
+	public void setName(String name) {
 		this.name = name;
 	}
 
-	public String getLastname()
-	{
+	public String getLastname() {
 		return lastname;
 	}
 
-	public void setLastname(String lastname)
-	{
+	public void setLastname(String lastname) {
 		this.lastname = lastname;
 	}
 }

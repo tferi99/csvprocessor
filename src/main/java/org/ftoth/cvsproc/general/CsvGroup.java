@@ -24,4 +24,9 @@ public class CsvGroup<T>
     {
         items.add(item);
     }
+
+    @Override
+    public String toString() {
+        return "Group[" + id.toString() + "]";
+    }
 }

@@ -20,16 +20,16 @@ then
 fi
 if [ $MODE == "in" ]
 then
-	MODEL_OUT=InputModel.java
+	CLASS=InputModel
 fi
 if [ $MODE == "out" ]
 then
-	MODEL_OUT=OutputModel.java
+	CLASS=OutputModel
 fi
-
+MODEL_OUT=${CLASS}.java
 
 # generating
-./_genModelJava.sh $PKG $DESC > $MODEL_OUT
+./_genModelJava.sh $PKG $CLASS $DESC > $MODEL_OUT
 
 # deployment
 DIR=$SRC_BASE/$PKG

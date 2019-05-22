@@ -1,13 +1,14 @@
 # it generates input JAVA Model class for CSV processor package
 
-if [ $# -ne 2 ]
+if [ $# -ne 3 ]
 then
 	app=`basename $0`
-	echo "Usage: $app <target JAVA package> <model descriptor file with header>" >&2
+	echo "Usage: $app <target JAVA package> <class name> <model descriptor file with header>" >&2
 	exit 1
 fi
 PKG=$1
-IN=$2
+CLASS=$2
+IN=$3
 IN_TMP=$IN.tmp
 
 
@@ -21,9 +22,9 @@ cp $IN $IN_TMP
 dos2unix $IN_TMP
 
 # model
-awk -v pkg=$PKG '
+awk -v pkg=$PKG -v class=$CLASS '
 	BEGIN {
-		FS="[;]"
+		FS="[,]"
 		rowIdx=0
 		colNum=0
 	}
@@ -73,7 +74,9 @@ awk -v pkg=$PKG '
 		printf "import com.opencsv.bean.CsvBindByPosition;\n"
 		printf "import com.opencsv.bean.CsvDate;\n\n"
 		
-		printf "public class InputModel\n"
+		printf "import java.util.Date;\n\n"
+
+		printf "public class %s\n", class
 		printf "{\n"
 		for(n=1; n<=colNum; n++) {
 			f=trim(props[n])

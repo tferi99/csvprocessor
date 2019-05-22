@@ -50,6 +50,8 @@ public class CsvGroupProcessorImpl extends CsvGroupProcessor<InputModel, OutputM
     @Override
     protected boolean validateGroup(CsvGroup<InputModel> group)
     {
+        //return false;
+
         List<InputModel> items = group.getItems();
 
         if (!validateGroupLenght(group, VALID_GRP_LEN)) {
@@ -84,8 +86,6 @@ public class CsvGroupProcessorImpl extends CsvGroupProcessor<InputModel, OutputM
             logValidationError(group.toString(), "USD Amount of later item is negative");
             return false;
         }
-
-
         return true;
     }
 
@@ -112,6 +112,8 @@ public class CsvGroupProcessorImpl extends CsvGroupProcessor<InputModel, OutputM
         double usd2 = in2.getUsdAmount();
         double diff = (usd1 + usd2) * -1;
         double fixedDiff = MathUtil.round(diff, 2);
+        /*String d = String.format("%.2f", fixedDiff);
+        out.setUsdAmount(d);*/
         out.setUsdAmount(fixedDiff);
 
         result.add(out);

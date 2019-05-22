@@ -4,6 +4,8 @@ import com.opencsv.bean.CsvBindByName;
 import com.opencsv.bean.CsvBindByPosition;
 import com.opencsv.bean.CsvDate;
 
+import java.util.Date;
+
 public class OutputModel
 {
 	@CsvBindByName(column = "Open Item Key")
@@ -30,51 +32,63 @@ public class OutputModel
 	@CsvBindByPosition(position = 5)
 	private String name;
 
-	public String getOpenItemKey() {
+	public String getOpenItemKey()
+	{
 		return openItemKey;
 	}
 
-	public void setOpenItemKey(String openItemKey) {
+	public void setOpenItemKey(String openItemKey)
+	{
 		this.openItemKey = openItemKey;
 	}
 
-	public String getCostCentre() {
+	public String getCostCentre()
+	{
 		return costCentre;
 	}
 
-	public void setCostCentre(String costCentre) {
+	public void setCostCentre(String costCentre)
+	{
 		this.costCentre = costCentre;
 	}
 
-	public String getAccount() {
+	public String getAccount()
+	{
 		return account;
 	}
 
-	public void setAccount(String account) {
+	public void setAccount(String account)
+	{
 		this.account = account;
 	}
 
-	public String getSituation() {
+	public String getSituation()
+	{
 		return situation;
 	}
 
-	public void setSituation(String situation) {
+	public void setSituation(String situation)
+	{
 		this.situation = situation;
 	}
 
-	public double getUsdAmount() {
+	public double getUsdAmount()
+	{
 		return usdAmount;
 	}
 
-	public void setUsdAmount(double usdAmount) {
+	public void setUsdAmount(double usdAmount)
+	{
 		this.usdAmount = usdAmount;
 	}
 
-	public String getName() {
+	public String getName()
+	{
 		return name;
 	}
 
-	public void setName(String name) {
+	public void setName(String name)
+	{
 		this.name = name;
 	}
 }

@@ -1,3 +1,3 @@
-Open Item Key;Cost Centre;Account;Account Description;Programme/Goal;Situation;Implementer;Book Code;Local Currency;LC Amount;Reversal LC Amount;USD Amount;Reversal USD Amount;Journal ID;Line Description;Line Reference;Budget Year;Journal Date;Fiscal Year;Period/Month;Status;Closed Date;Source;Open Date;Reconcile Nbr;Ledger;Descr;Name;LastName
-String;String;String;String;String;String;String;String;String;String;String;double;String;String;String;String;String;Date;String;String;String;String;String;String;String;String;String;String;String
-;;;;;;;;;;;;;;;;;dd/MM/yyyy;;;;;;;;;;;
+Open Item Key,Cost Centre,Account,Account Description,Programme/Goal,Situation,Implementer,Book Code,Local Currency,LC Amount,Reversal LC Amount,USD Amount,Reversal USD Amount,Journal ID,Line Description,Line Reference,Budget Year,Journal Date,Fiscal Year,Period/Month,Status,Closed Date,Source,Open Date,Reconcile Nbr,Ledger,Descr,Name,LastName
+String,String,String,String,String,String,String,String,String,double,double,double,double,String,String,String,String,Date,String,String,String,String,String,String,String,String,String,String,String
+,,,,,,,,,#0.00,#0.00,#0.00,#0.00,,,,,dd/MM/yyyy,,,,,,,,,,,

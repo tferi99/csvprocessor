@@ -1,5 +1,3 @@
-# ___UNDER CONSTRUCTION___
-
 # cvsprocessor
 CVS file processor based on OpenCVS library.
 
@@ -58,17 +56,51 @@ Usage:
 
 # Custom processors
 ## How to add new custom processors
-You can generate some metadata classes with a shellscript which generates Java classes from CSV column headers.
-1. Generate model and mapping startegy JAVA by input CSV.
-2. Move Java classes into custom processor package (org.ftoth.cvsproc.&lt;CustProc&gt;)
-3. 
+1. Generate input/output format model classes with a shellscript which generates Java classes from CSV column headers (see below).
+2. Open project in JAVA IDE (Eclipse, Idea) and generate getters/setters for format model classes.
+3. Create input model type specific reader (CsvReaderIml). NOTE: if you keep naming conventions you just have to copy one from other processors. The only what you have to change is package name.
+4. Create processor (e.g. inherit CsvGroupProcessorImpl from CsvGroupProcessor) or copy one from other examples. Implement abstract methods.
+    
+## Generating input/output format model classes
+```bash
+$ ./generateModelJava.sh
+Usage: generateModelJava.sh <mode> <target JAVA package> <input model descriptor file>
+    where:
+       - mode: in/out
+```
+Where:
+- target JAVA package: package of custom processor
+- mode:
+    - in: generating input data model (InputModel.java)
+    - out: generating (primary) output data model (OutputModel.java)
+- input model descriptor file: describes colums (see next section)    
 
-## grp2
-Requirement:
-- records are groupped by 'Open Iem Key' (column 1)
-- find groups which contain 2 records and where
-    - 'USD Amount' (column 12) is negative in one record but positive in other record
-- create a single record from processed groups with these fields:
-       - 'Open Item Key' (col1)
-       - USD amount difference (col12)
-- other records 
+JAVA classes generated into:
+
+    src/main/java/org/ftoth/cvsproc/<target JAVA package>
+
+For example to generate input model for 'custom2' processor:
+
+```bash
+$ ./generateModelJava.sh in custom2 c2_in_cfg.csv
+```
+## Model descriptor
+- It describes an input/output model class
+- CSV file, where separator is comma (,)
+- in CSV a column contains information about a corresponding column in processed/generated CSV 
+  (order of descriptor columns are of course in the same order as columns in data CSVs)
+- It has 3 lines
+    1. header titles of CSV columns
+    2. JAVA types of properties where values are mapped from data CSVs
+    3. additional parameter for types (e.g date or number format)
+- Supported types are almost all JAVA types, but there are special types which require additional parameters. This parameter describes format. Syntax of format follows JAVA formatter rules (by SimpleDateFormat or DecimalFormat)
+- Special types which require additional parameters:
+    - Date (example: yyyy/MM/dd)
+    - double or Double (example: #0.00)
+- Valid values for boolean or Boolean type are: true, false, 1, 0
+
+TIPS:
+- Sample processor descriptors can be found in 'data' directory.
+- You can create/edit descriptor files with Google Tables (save: File/Download as...)
+    
+

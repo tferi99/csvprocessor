@@ -93,6 +93,10 @@ $ ./generateModelJava.sh in custom2 c2_in_cfg.csv
     3. additional parameter for types (e.g date or number format)
 - Supported types are almost all JAVA types, but there are special types which require additional parameters. This parameter describes format. Syntax of format follows JAVA formatter rules (by SimpleDateFormat or DecimalFormat)
 - Special types which require additional parameters:
-    - Date: format 
+    - Date (example: yyyy/MM/dd)
+    - double or Double (example: #0.00)
+- Valid values for boolean or Boolean type are: true, false, 1, 0
+
+TIP: Sample processor descriptors can be found in 'data' directory.
     
 

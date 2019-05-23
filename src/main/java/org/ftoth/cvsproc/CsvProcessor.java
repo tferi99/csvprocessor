@@ -1,7 +1,6 @@
 package org.ftoth.cvsproc;
 
 import org.apache.log4j.Logger;
-import org.ftoth.cvsproc.grp2.CsvGroupProcessorImpl;
 import org.ftoth.cvsproc.general.CsvGroupProcessor;
 
 public class CsvProcessor
@@ -49,7 +48,11 @@ public class CsvProcessor
             CsvGroupProcessor p = null;
             switch (mode) {
                 case GRP2:
-                    p = new CsvGroupProcessorImpl(inputFile);
+                    p = new org.ftoth.cvsproc.grp2.CsvGroupProcessorImpl(inputFile);
+            }
+            switch (mode) {
+                case GRP3:
+                    p = new org.ftoth.cvsproc.grp3.CsvGroupProcessorImpl(inputFile);
             }
             p.process();
             //System.out.println(p.dump());

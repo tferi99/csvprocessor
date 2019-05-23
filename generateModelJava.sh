@@ -4,7 +4,7 @@ SRC_BASE=./src/main/java/org/ftoth/cvsproc
 if [ $# -ne 3 ]
 then
 	app=`basename $0`
-	echo "Usage: $app <mode> <target JAVA package> <input model descriptor file with header>" >&2
+	echo "Usage: $app <mode> <target JAVA package> <input model descriptor file>" >&2
 	echo "    where:"
 	echo "       - mode: in/out"
 	exit 1

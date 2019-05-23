@@ -3,14 +3,10 @@ package org.ftoth.cvsproc.grp2;
 import org.apache.log4j.Logger;
 import org.ftoth.cvsproc.general.CsvGroup;
 import org.ftoth.cvsproc.general.CsvGroupProcessor;
-import org.ftoth.general.util.MathUtil;
 
-import java.io.Reader;
-import java.io.StringReader;
 import java.util.List;
 import java.util.Objects;
 import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 public class CsvGroupProcessorImpl extends CsvGroupProcessor<InputModel, OutputModel>
 {
@@ -111,10 +107,7 @@ public class CsvGroupProcessorImpl extends CsvGroupProcessor<InputModel, OutputM
         double usd1 = in1.getUsdAmount();
         double usd2 = in2.getUsdAmount();
         double diff = (usd1 + usd2) * -1;
-        double fixedDiff = MathUtil.round(diff, 2);
-        /*String d = String.format("%.2f", fixedDiff);
-        out.setUsdAmount(d);*/
-        out.setUsdAmount(fixedDiff);
+        out.setUsdAmount(fixDouble(diff, 2));
 
         result.add(out);
     }

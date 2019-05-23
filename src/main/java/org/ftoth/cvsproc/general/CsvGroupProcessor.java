@@ -2,6 +2,7 @@ package org.ftoth.cvsproc.general;
 
 import org.apache.commons.io.FilenameUtils;
 import org.apache.log4j.Logger;
+import org.ftoth.general.util.MathUtil;
 
 import java.io.Reader;
 import java.io.StringReader;
@@ -236,23 +237,7 @@ public abstract class CsvGroupProcessor<I, O>
         return outputHeaderReader;
     }
 
-    /**
-     * If you want to create output file from input file.
-     * 
-     * @param inputFile
-     * @return
-     */
-    protected static String createDefaultOutputFile(String inputFile)
-    {
-        if (inputFile == null) {
-            return inputFile;
-        }
-        String ext = FilenameUtils.getExtension(inputFile);
-        String base = FilenameUtils.removeExtension(inputFile);
-        
-        return base + DEFAULT_OUTPUT_FILE_POSTFIX + "." + ext;
-    }
-    
+    //------------------------------------ abstract ------------------------------------------------
     /**
      * Return simple or composite ID of current bean.
      *
@@ -285,4 +270,36 @@ public abstract class CsvGroupProcessor<I, O>
      * @return
      */
     protected abstract String[] getOutputHeaderColumnNames();
+
+    //------------------------------------ helpers ------------------------------------------------
+    /**
+     * If you want to create output file from input file.
+     *
+     * @param inputFile
+     * @return
+     */
+    protected static String createDefaultOutputFile(String inputFile)
+    {
+        if (inputFile == null) {
+            return inputFile;
+        }
+        String ext = FilenameUtils.getExtension(inputFile);
+        String base = FilenameUtils.removeExtension(inputFile);
+
+        return base + DEFAULT_OUTPUT_FILE_POSTFIX + "." + ext;
+    }
+
+
+    /**
+     * To fix double problems with rounding to staten number of digits.
+     *
+     * @param d
+     * @param digits
+     * @return
+     */
+    protected static double fixDouble(double d, int digits)
+    {
+        return MathUtil.round(d, digits);
+    }
+
 }

@@ -1,5 +1,3 @@
-# ___UNDER CONSTRUCTION___
-
 # cvsprocessor
 CVS file processor based on OpenCVS library.
 

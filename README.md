@@ -56,8 +56,12 @@ Usage:
 
 # Custom processors
 ## How to add new custom processors
-You can generate some metadata classes with a shellscript which generates Java classes from CSV column headers.
-
+1. Generate input/output format model classes with a shellscript which generates Java classes from CSV column headers (see below).
+2. Open project in JAVA IDE (Eclipse, Idea) and generate getters/setters for format model classes.
+3. Create input model type specific reader (CsvReaderIml). NOTE: if you keep naming conventions you just have to copy one from other processors. The only what you have to change is package name.
+4. Create processor (e.g. inherit CsvGroupProcessorImpl from CsvGroupProcessor) or copy one from other examples. Implement abstract methods.
+    
+## Generating input/output format model classes
 ```bash
 $ ./generateModelJava.sh
 Usage: generateModelJava.sh <mode> <target JAVA package> <input model descriptor file>

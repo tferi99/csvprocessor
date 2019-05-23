@@ -95,6 +95,8 @@ $ ./generateModelJava.sh in custom2 c2_in_cfg.csv
     - double or Double (example: #0.00)
 - Valid values for boolean or Boolean type are: true, false, 1, 0
 
-TIP: Sample processor descriptors can be found in 'data' directory.
+TIPS:
+- Sample processor descriptors can be found in 'data' directory.
+- You can create/edit descriptor files with Google Tables (save: File/Download as...)
     
 

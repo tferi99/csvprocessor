@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="824ac2a6-2182-44bb-aff0-fe0ddc5db712" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/ftoth/cvsproc/grp3/CsvReaderImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/ftoth/cvsproc/CsvProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/ftoth/cvsproc/CsvProcessor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/ftoth/cvsproc/general/CsvGroupProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/ftoth/cvsproc/general/CsvGroupProcessor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/ftoth/cvsproc/grp2/CsvGroupProcessorImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/ftoth/cvsproc/grp2/CsvGroupProcessorImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/ftoth/cvsproc/grp2/InputModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/ftoth/cvsproc/grp2/InputModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/ftoth/cvsproc/grp2/OutputModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/ftoth/cvsproc/grp2/OutputModel.java" afterDir="false" />
-    </list>
+    <list default="true" id="824ac2a6-2182-44bb-aff0-fe0ddc5db712" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,7 +15,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/org/ftoth/cvsproc/general/CsvGroupProcessor.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="536">
-              <caret line="302" lean-forward="true" selection-start-line="302" selection-end-line="302" />
+              <caret line="302" selection-start-line="302" selection-end-line="302" />
               <folding>
                 <element signature="e#9190#9191#0" expanded="true" />
               </folding>
@@ -35,7 +27,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/org/ftoth/cvsproc/grp3/CsvGroupProcessorImpl.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="468">
-              <caret line="118" column="5" lean-forward="true" selection-start-line="118" selection-start-column="5" selection-end-line="118" selection-end-column="5" />
+              <caret line="118" column="5" selection-start-line="118" selection-start-column="5" selection-end-line="118" selection-end-column="5" />
               <folding>
                 <element signature="e#2682#2683#0" expanded="true" />
               </folding>
@@ -46,8 +38,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/ftoth/cvsproc/CsvProcessor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="502">
-              <caret line="55" column="13" lean-forward="true" selection-start-line="55" selection-start-column="13" selection-end-line="55" selection-end-column="13" />
+            <state relative-caret-position="605">
+              <caret line="55" column="13" selection-start-line="55" selection-start-column="13" selection-end-line="55" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -59,7 +51,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/org/ftoth/cvsproc/grp2/CsvGroupProcessorImpl.java">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="30" lean-forward="true" selection-start-column="8" selection-end-column="30" />
+              <caret column="30" selection-start-column="8" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -246,7 +238,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558599598684" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558599616369" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -317,15 +309,15 @@
       <workItem from="1558174224280" duration="5243000" />
       <workItem from="1558412726966" duration="9628000" />
       <workItem from="1558425416137" duration="1427000" />
-      <workItem from="1558462531123" duration="9029000" />
+      <workItem from="1558462531123" duration="9647000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="59002000" />
+    <option name="totallyTimeSpent" value="59620000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1186" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
     <layout>
       <window_info id="Designer" order="0" />
       <window_info id="Image Layers" order="1" />
@@ -345,7 +337,7 @@
       <window_info anchor="bottom" id="Message" order="7" />
       <window_info anchor="bottom" id="Find" order="8" weight="0.328807" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Run" order="10" visible="true" weight="0.28225026" />
+      <window_info anchor="bottom" id="Run" order="10" weight="0.28225026" />
       <window_info anchor="bottom" id="Debug" order="11" weight="0.314258" />
       <window_info anchor="bottom" id="Cvs" order="12" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="13" weight="0.4" />
@@ -908,7 +900,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/org/ftoth/cvsproc/general/CsvGroupProcessor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="536">
-          <caret line="302" lean-forward="true" selection-start-line="302" selection-end-line="302" />
+          <caret line="302" selection-start-line="302" selection-end-line="302" />
           <folding>
             <element signature="e#9190#9191#0" expanded="true" />
           </folding>
@@ -918,7 +910,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/org/ftoth/cvsproc/grp3/CsvGroupProcessorImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="468">
-          <caret line="118" column="5" lean-forward="true" selection-start-line="118" selection-start-column="5" selection-end-line="118" selection-end-column="5" />
+          <caret line="118" column="5" selection-start-line="118" selection-start-column="5" selection-end-line="118" selection-end-column="5" />
           <folding>
             <element signature="e#2682#2683#0" expanded="true" />
           </folding>
@@ -928,7 +920,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/org/ftoth/cvsproc/grp2/CsvGroupProcessorImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="30" lean-forward="true" selection-start-column="8" selection-end-column="30" />
+          <caret column="30" selection-start-column="8" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -937,8 +929,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/ftoth/cvsproc/CsvProcessor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="502">
-          <caret line="55" column="13" lean-forward="true" selection-start-line="55" selection-start-column="13" selection-end-line="55" selection-end-column="13" />
+        <state relative-caret-position="605">
+          <caret line="55" column="13" selection-start-line="55" selection-start-column="13" selection-end-line="55" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

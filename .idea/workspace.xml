@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="824ac2a6-2182-44bb-aff0-fe0ddc5db712" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="824ac2a6-2182-44bb-aff0-fe0ddc5db712" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -56,7 +52,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558599616369" />
-    <property name="last_opened_file_path" value="D:/WORK_PRIVATE/work/TimeTrackerClient/timetrackerclient-core" />
+    <property name="last_opened_file_path" value="D:/WORK/apas_trunk/3rdparty/EWS-Java-API-test/ews-api1-test" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -123,6 +119,7 @@
       <workItem from="1588971989244" duration="13000" />
       <workItem from="1589275577742" duration="5000" />
       <workItem from="1589833551483" duration="14000" />
+      <workItem from="1594044952178" duration="104000" />
     </task>
     <servers />
   </component>
@@ -138,6 +135,10 @@
       <screen x="0" y="0" width="1920" height="1170" />
     </state>
     <state x="811" y="476" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/-1920.0.1920.1050/0.0.1920.1170@0.0.1920.1170" timestamp="1586896112845" />
+    <state x="740" y="282" key="FileChooserDialogImpl" timestamp="1594045054596">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="740" y="282" key="FileChooserDialogImpl/-1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1594045054596" />
     <state width="1876" height="92" key="GridCell.Tab.0.bottom" timestamp="1586899622468">
       <screen x="0" y="0" width="1920" height="1170" />
     </state>
